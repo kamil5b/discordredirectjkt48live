@@ -22,7 +22,7 @@ func main() {
 	// Listen and Server in 0.0.0.0:$PORT
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "5000"
+		port = "8080"
 	}
 
 	log.Fatal(app.Listen(":" + port))
